@@ -14,7 +14,7 @@ course_name VARCHAR(255)
 CREATE TABLE Cutoffs(
  college_id INT PRIMARY KEY,
  course_id INT,
- branch_id INT,
+ gender VARCHAR(6),
  category VARCHAR(255),
  cutoff_percentile FLOAT,
  cutoff_ranks INT,
@@ -26,10 +26,29 @@ INSERT INTO Colleges (college_id,college_name,college_website,college_city)
 VALUES('1002','Government College of Engineering','https://gcoea.ac.in','Amravati')
 
 INSERT INTO Courses (course_id,course_name)
-VALUES('100219110','Civil Engineering');
+VALUES('100219110','Civil Engineering')
 
+INSERT INTO Cutoffs(college_id,course_id,gender,category,cutoff_percentile,cutoff_ranks)
+VALUES('1002','100219110','GENERAL','Male','80.7328826','45820');
+INSERT INTO Cutoffs(college_id,course_id,gender,category,cutoff_percentile,cutoff_ranks)
+VALUES('1002','100219110','OBC','Male','76.2843676','55212');
+INSERT INTO Cutoffs(college_id,course_id,category,cutoff_percentile,cutoff_ranks)
+VALUES('1002','100219110','SC','Male','76.6166542','54803');
+INSERT INTO Cutoffs(college_id,course_id,category,cutoff_percentile,cutoff_ranks)
+VALUES('1002','100219110','ST','Male','
+INSERT INTO Cutoffs(college_id,course_id,category,cutoff_percentile,cutoff_ranks)
+VALUES('1002','100219110','VJ',
+INSERT INTO Cutoffs(college_id,course_id,category,cutoff_percentile,cutoff_ranks)
+VALUES('1002','100219110','NT1',
+INSERT INTO Cutoffs(college_id,course_id,category,cutoff_percentile,cutoff_ranks)
+VALUES('1002','100219110','NT2',
+INSERT INTO Cutoffs(college_id,course_id,category,cutoff_percentile,cutoff_ranks)
+VALUES('1002','100219110','NT3',
 INSERT INTO Courses (course_id,course_name)
-VALUES('100224210','Computer Science & Engineering');
+VALUES('100224210','Computer Science & Engineering')
+
+INSERT INTO Cutoffs(college_id,course_id,category,cutoff_percentile,cutoff_ranks)
+VALUES('1002','100219110',
 
 INSERT INTO Courses (course_id,course_name)
 VALUES('100224610','Information Technology');
@@ -266,43 +285,43 @@ INSERT INTO Colleges (college_id,college_name,college_website,college_city)
 VALUES('3192','Smt. Indira Gandhi College of Engineering','https://sigce.edu.in','Navi Mumbai');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('3193','Shivajirao S. Jondhale College of Engineering','https://www.shivajiraojondhalecoe.org.in','Mumbai');
+VALUES('3193','Shivajirao S. Jondhale College of Engineering','https://www.shivajiraojondhalecoe.org.in','Mumbai')
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('3194','Vidyavardhini''s College of Engineering and Technology','https://vcet.edu.in','
+VALUES('3194','Vidyavardhini''s College of Engineering and Technology','https://vcet.edu.in','Vasai');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('3196','Lokmanya Tilak College of Engineering','https://www.ltce.in',
+VALUES('3196','Lokmanya Tilak College of Engineering','https://www.ltce.in','Navi Mumbai');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('3197','Agnel Charities'' FR. C. Rodrigues Institute of Technology','https://fcrit.ac.in',
+VALUES('3197','Agnel Charities'' FR. C. Rodrigues Institute of Technology','https://fcrit.ac.in','Navi Mumbai');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('3198','Konkan Gyanpeeth College of Engineering','https://kgce.edu.in',
+VALUES('3198','Konkan Gyanpeeth College of Engineering','https://kgce.edu.in','Karjat');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('3199','Shri Vile Parle Kelvani Mandal''s Dwarkadas J. Sanghvi College of Engineering','https://www.djsce.ac.in',
+VALUES('3199','Shri Vile Parle Kelvani Mandal''s Dwarkadas J. Sanghvi College of Engineering','https://www.djsce.ac.in','Mumbai');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('3200','Hope Foundation and research center''s Finolex Academy of Management and Technology','http://famt.ac.in',
+VALUES('3200','Hope Foundation and research center''s Finolex Academy of Management and Technology','http://famt.ac.in','Ratnagiri');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('3201','Rizvi Education Society''s Rizvi College of Engineering','https://eng.rizvi.edu.in',
+VALUES('3201','Rizvi Education Society''s Rizvi College of Engineering','https://eng.rizvi.edu.in','Mumbai');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('3202','Rajendra Mane College of Engineering & Technology','http://www.rmcet.com',
+VALUES('3202','Rajendra Mane College of Engineering & Technology','http://www.rmcet.com','Ratnagiri');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('3203','Atharva College of Engineering','https://atharvacoe.ac.in',
+VALUES('3203','Atharva College of Engineering','https://atharvacoe.ac.in','Mumbai');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('3204','St. Francis Institute of Technology','https://www.sfit.ac.in',
+VALUES('3204','St. Francis Institute of Technology','https://www.sfit.ac.in','Mumbai');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('3206','S.S.P.M.''s College of Engineering','https://sspmcoe.ac.in',
+VALUES('3206','S.S.P.M.''s College of Engineering','https://sspmcoe.ac.in','Sindhudurg');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('3207','Mahatma Education Society''s Pillai College of Engineering','https://www.pce.ac.in',
+VALUES('3207','Mahatma Education Society''s Pillai College of Engineering','https://www.pce.ac.in','Navi Mumbai');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
 VALUES('3208','Don Bosco Institute of Technology','https://www.dbit.in',
@@ -982,31 +1001,31 @@ INSERT INTO Colleges (college_id,college_name,college_website,college_city)
 VALUES('6781','Bhagwant Institute of Technology','https://www.bitbarshi.edu.in','
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('6782','Sahakar Maharshee Shankarrao Mohite Patil Institute of Technology & Research','https://www.smsmpitr.edu.in','
+VALUES('6782','Sahakar Maharshee Shankarrao Mohite Patil Institute of Technology & Research','https://www.smsmpitr.edu.in','Solapur');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('6794','Anantrao Pawar College of Engineering & Research','https://abmspcoerpune.org','
+VALUES('6794','Anantrao Pawar College of Engineering & Research','https://abmspcoerpune.org','Pune');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('6795','Shri Someshwar Shikshan Prasarak Mandal, Sharadchandra Pawar College of Engineering & Technology','https://www.secsomeshwar.ac.in','
+VALUES('6795','Shri Someshwar Shikshan Prasarak Mandal, Sharadchandra Pawar College of Engineering & Technology','https://www.secsomeshwar.ac.in','Pune');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('6796','Bharati Vidyapeeth`s College of Engineering','https://bvcoend.ac.in','
+VALUES('6796','Bharati Vidyapeeth`s College of Engineering','https://bvcoend.ac.in','Pune');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('6797','Dnyanshree Institute Engineering and Technology','https://www.dnyanshree.edu.in','
+VALUES('6797','Dnyanshree Institute Engineering and Technology','https://www.dnyanshree.edu.in','Satara');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('6799','Shivganga Charitable Trust, Sangli Vishveshwarya Technical Campus, Faculty of Diploma Engineering','https://www.shivgangavtc.org','
+VALUES('6799','Shivganga Charitable Trust, Sangli Vishveshwarya Technical Campus, Faculty of Diploma Engineering','https://www.shivgangavtc.org','Satara');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('6802','Dr. D.Y.Patil Institute of Engineering','https://www.engg.dypvp.edu.in','
+VALUES('6802','Dr. D.Y.Patil Institute of Engineering','https://www.engg.dypvp.edu.in','Nagpur');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('6803','Sant Gajanan Maharaj College of Engineering','https://www.ssgmce.ac.in','
+VALUES('6803','Sant Gajanan Maharaj College of Engineering','https://www.ssgmce.ac.in','Shegaon');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
-VALUES('6808','Keystone School of Engineering','https://www.keystoneschoolofengineering.com','
+VALUES('6808','Keystone School of Engineering','https://www.keystoneschoolofengineering.com','Pune');
 
 INSERT INTO Colleges (college_id,college_name,college_website,college_city)
 VALUES('6811','Sanjay Ghodawat Institute','https://www.sanjayghodawatuniversity.ac.in','Kolhapur')
